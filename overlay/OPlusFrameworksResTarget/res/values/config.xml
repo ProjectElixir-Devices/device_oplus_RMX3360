@@ -458,6 +458,11 @@
 
     <!-- Fast brightness animation ramp rate in float. -->
     <item name="config_brightnessRampRateFastFloat" format="float" type="dimen">0.4058823</item>
+    
+    <!-- Screen brightness used to dim the screen while dozing in a very low power state.
+        May be less than the minimum allowed brightness setting
+        that can be set by the user. -->
+    <integer name="config_screenBrightnessDoze">35</integer>
 
     <!-- The type of the light sensor to be used by the display framework for things like
          auto-brightness. If unset, then it just gets the default sensor of type TYPE_LIGHT. -->
