@@ -8,12 +8,15 @@ $(call inherit-product, device/oplus/RMX3360/device.mk)
 # Inherit some common Elixir Stuff
 $(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
+# Inherit PixelLauncher
+$(call inherit-product, vendor/PixelLauncher/PixelLauncher.mk)
+
 # Official-ify
-Elixir_MAINTAINER := X-R-P
+ELIXIR_MAINTAINER := X-R-P
+ELIXIR_BUILD_TYPE := OFFICIAL
 IS_PHONE := true
 TARGET_SUPPORTS_QUICK_TAP := true
 TARGET_SUPPORTS_CALL_RECORDING := true
-CUSTOM_BUILD_TYPE := OFFICIAL
 TARGET_SUPPORTS_GOOGLE_RECORDER := false
 TARGET_INCLUDE_STOCK_ACORE := false
 TARGET_INCLUDE_LIVE_WALLPAPERS := false
